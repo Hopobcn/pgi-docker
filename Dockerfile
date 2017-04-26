@@ -12,7 +12,7 @@ WORKDIR /root
 
 RUN git clone https://github.com/Hopobcn/pgi-travis.git && \
     cd pgi-travis && \
-    ./install-pgi.sh && \
+    ./install-pgi.sh --nvidia --managed --mpi --mpi-gpu && \
     cd - && rm -rf pgi-travis
 
 ENV PGI_VERSION 16.10
