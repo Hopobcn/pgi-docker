@@ -1,4 +1,4 @@
-FROM nvidia/cuda:8.0
+FROM nvidia/cuda:8.0-devel-ubuntu16.04
 
 # Install requirements
 RUN apt-get update && apt-get install -y --no-install-recommends \
