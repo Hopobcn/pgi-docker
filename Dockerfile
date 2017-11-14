@@ -15,7 +15,7 @@ RUN git clone https://github.com/Hopobcn/pgi-travis.git && \
     ./install-pgi.sh --nvidia --managed --mpi --mpi-gpu && \
     cd - && rm -rf pgi-travis
 
-ENV PGI_VERSION 16.10
+ENV PGI_VERSION 17.10
 ENV PGI_INSTALL_DIR "/usr/local/pgi"
 ENV PGI_HOME "${PGI_INSTALL_DIR}"/linux86-64/"${PGI_VERSION}"
 ENV PGI_BIN_DIR "${PGI_HOME}"/bin
